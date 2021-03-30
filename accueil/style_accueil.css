@@ -1,0 +1,85 @@
+body{
+    background-image: linear-gradient(90deg,rgb(145, 0, 0),black,rgb(145, 0, 0))
+}
+/*barre de menu*/
+ul{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+li{
+    margin-left:0px;
+    float:left
+}
+ul li a{
+    display:block;
+    float:left;
+    width:240px;
+    height:20px;
+    background-image:linear-gradient(black,grey);
+    color:white;
+    text-decoration:none;
+    text-align: center;
+    padding:5px;
+    border:2px solid;
+    transition-property: height;
+    transition-duration: 70ms;
+}
+ul li a:hover{
+    height:25px;
+    border-color:white;
+}
+h1{
+    text-align: center;
+    color:rgb(233, 171, 1);
+}
+/*image*/
+/* Conteneur principal */
+.overlay-image {
+    display: block;
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Image originale */
+.overlay-image .image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* Texte original */
+.overlay-image .text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+/* Overlay */
+.overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+/* Apparition overlay sur passage souris */
+.overlay-image:hover .hover {
+    opacity: 1;
+}
+.overlay-image .normal {
+    transition: .5s ease;
+}
+.overlay-image:hover .normal {
+    opacity: 0;
+}
+.overlay-image .hover {
+    background-color: rgba(0,0,0,0.5);
+}
